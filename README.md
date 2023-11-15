@@ -1,6 +1,9 @@
 # Your Project's Title...
 Your project's description...
 
+Not looking good, it looks like something in the Google Drive integration has broken, but what and how, I do not know /sadpanda.
+https://www.joelonsoftware.com/2002/11/11/the-law-of-leaky-abstractions/
+
 ## Environments
 - Preview: https://main--aem-boilerplate--pzrq.hlx.page/
 - Live: https://main--aem-boilerplate--pzrq.hlx.live/
