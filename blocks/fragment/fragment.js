@@ -19,7 +19,6 @@ import {
  */
 export async function loadFragment(path) {
   if (path && path.startsWith('/')) {
-    debugger;
     const resp = await fetch(`${path}.plain.html`);
     if (resp.ok) {
       const main = document.createElement('main');
@@ -38,6 +37,12 @@ export async function loadFragment(path) {
       await loadBlocks(main);
       return main;
     }
+    // eslint-disable-next-line no-console
+    console.info(
+      'Hello there, if you are seeing a 404 you are probably on the right track, but you need to '
+      + 'use the AEM Sidekick extension to promote the file to `preview` or `live`. More details: '
+      + 'https://www.aem.live/developer/tutorial#preview-and-publish-your-content',
+    );
   }
   return null;
 }
