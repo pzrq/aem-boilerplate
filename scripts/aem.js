@@ -395,7 +395,7 @@ function decorateButtons(element) {
 
 /**
  * Add <img> for icon, prefixed with codeBasePath and optional prefix.
- * @param {span} [element] span element with icon classes
+ * @param {span} [span] span element with icon classes
  * @param {string} [prefix] prefix to be added to icon the src
  */
 function decorateIcon(span, prefix = '') {
@@ -404,6 +404,7 @@ function decorateIcon(span, prefix = '') {
     .substring(5);
   const img = document.createElement('img');
   img.dataset.iconName = iconName;
+  img.alt = `${iconName} icon`;
   img.src = `${window.hlx.codeBasePath}${prefix}/icons/${iconName}.svg`;
   img.loading = 'lazy';
   span.append(img);
