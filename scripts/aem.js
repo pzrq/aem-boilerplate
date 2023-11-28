@@ -395,7 +395,7 @@ function decorateButtons(element) {
 
 /**
  * Add <img> for icon, prefixed with codeBasePath and optional prefix.
- * @param {span} [span] span element with icon classes
+ * @param {Element} [span] span element with icon classes
  * @param {string} [prefix] prefix to be added to icon the src
  */
 function decorateIcon(span, prefix = '') {
